@@ -8,10 +8,10 @@ desired_caps = {
   "platformName": "Android",
   "platformVersion": "9",
   "deviceName": "xxx",
-  "appPackage": "com.p1.mobile.putong",
-  "appActivity": ".ui.splash.SplashProxyAct",
-    # "appPackage": "com.fenzotech.jimu",
-    # "appActivity": "com.eomchat.module.splash.SplashActivity",
+  # "appPackage": "com.p1.mobile.putong",
+  # "appActivity": ".ui.splash.SplashProxyAct",
+    "appPackage": "com.fenzotech.jimu",
+    "appActivity": "com.eomchat.module.splash.SplashActivity",
   "unicodeKeyboard": True,
   "resetKeyboard": True,
   "noReset": True,
@@ -26,9 +26,9 @@ driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 # driver.implicitly_wait(5)
 
 # 如果有`新版本按钮`界面，点击`取消`
-cancel_button = driver.find_elements_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.TextView")
-if cancel_button[0]:
-    cancel_button[0].click()
+# cancel_button = driver.find_elements_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.TextView")
+# if cancel_button[0]:
+#     cancel_button[0].click()
 
 # 根据id定位搜索位置框，点击
 # driver.find_element_by_id("expand_search").click()
