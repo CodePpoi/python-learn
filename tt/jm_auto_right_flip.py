@@ -12,7 +12,7 @@ desired_caps = {
   # "appActivity": ".ui.splash.SplashProxyAct",
     "appPackage": "com.fenzotech.jimu",
     "appActivity": "com.eomchat.module.splash.SplashActivity",
-  "unicodeKeyboard": True,
+  "unicodeKeyboard": False,
   "resetKeyboard": True,
   "noReset": True,
   "newCommandTimeout": 6000,
